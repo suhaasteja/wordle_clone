@@ -1,0 +1,135 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scale: 0.8;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.boxes{
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 70px);
+  grid-template-rows: repeat(5, 70px);
+  grid-auto-flow: row;
+  place-content: center;
+}
+
+.box{
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+}
+
+
+.keypad{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.row_1, .row_2, .row_3{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.key{
+    min-width: 50px;
+    min-height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#restart-btn{
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+
+
+.wrong{
+  background: #656565;
+  border: none;
+}
+
+
+.correct{
+  background: #0e8c0e;
+  border: none;
+}
+
+.almost-correct{
+  background: #6666e0;
+  border: none;
+}
+
+
+/* @media screen and (max-width: 600px) { */
+   /* .boxes{
+      width: 100%;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(5, 50px);
+      grid-template-rows: repeat(5, 50px);
+      grid-auto-flow: row;
+      place-content: center;
+    }
+   
+} */
